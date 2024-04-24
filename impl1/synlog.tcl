@@ -1,0 +1,1 @@
+run_tcl -fg mipi2parallel_lifmd_impl1_synplify.tcl

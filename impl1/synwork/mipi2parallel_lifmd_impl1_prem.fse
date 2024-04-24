@@ -1,0 +1,22 @@
+
+fsm_encoding {2014801481} onehot
+
+fsm_state_encoding {2014801481} CR_SET {000000001}
+
+fsm_state_encoding {2014801481} CMDR_SET {000000010}
+
+fsm_state_encoding {2014801481} INTCR_SET {000000100}
+
+fsm_state_encoding {2014801481} SLAVE_ADR_MSB_SET {000001000}
+
+fsm_state_encoding {2014801481} WAIT {000010000}
+
+fsm_state_encoding {2014801481} STATUS_READ {000100000}
+
+fsm_state_encoding {2014801481} SUB_ADR_SET {001000000}
+
+fsm_state_encoding {2014801481} REG_WRITE {010000000}
+
+fsm_state_encoding {2014801481} REG_READ {100000000}
+
+fsm_registers {2014801481} {r_state[8]}  {r_state[7]}  {r_state[6]}  {r_state[5]}  {r_state[4]}  {r_state[3]}  {r_state[2]}  {r_state[1]}  {r_state[0]} 

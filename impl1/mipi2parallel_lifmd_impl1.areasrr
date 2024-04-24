@@ -1,0 +1,158 @@
+----------------------------------------------------------------------
+Report for cell mipi2parallel_top.verilog
+
+Register bits: 174 of 5600 (3%)
+PIC Latch:       0
+I/O cells:       32
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        2       100.0
+                            EHXPLLM        1       100.0
+                            FD1P3BX        2       100.0
+                            FD1P3DX      143       100.0
+                            FD1S3BX        9       100.0
+                            FD1S3DX       20       100.0
+                                GSR        1       100.0
+                               I2CA        1       100.0
+                                 IB        2       100.0
+                                INV        2       100.0
+                            L6MUX21       11       100.0
+                          MIPIDPHYA        1       100.0
+                                 OB       28       100.0
+                           ORCALUT4      166       100.0
+                              PFUMX       25       100.0
+                                PUR        1       100.0
+                                VHI        9       100.0
+                                VLO        9       100.0
+                     b2p_byte2pixel        1       100.0
+               rx_dphy_capture_ctrl        1       100.0
+               rx_dphy_dphy_rx_wrap        1       100.0
+             rx_dphy_rx_global_ctrl        1       100.0
+SUB MODULES 
+                                b2p        1       100.0
+                              i2c_s        1       100.0
+                      i2c_target_Z2        1       100.0
+                            int_pll        1       100.0
+                      mipi2parallel        1       100.0
+                            rx_dphy        1       100.0
+                 rx_dphy_dphy_rx_Z1        1       100.0
+          rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s        1       100.0
+                            
+                         TOTAL           445           
+----------------------------------------------------------------------
+Report for cell i2c_target_Z2.netlist
+     Instance path:  i2c_target_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        2       100.0
+                            FD1P3BX        2       100.0
+                            FD1P3DX      143       100.0
+                            FD1S3BX        9       100.0
+                            FD1S3DX       12        60.0
+                               I2CA        1       100.0
+                            L6MUX21       11       100.0
+                           ORCALUT4      163        98.2
+                              PFUMX       25       100.0
+                                VHI        2        22.2
+                                VLO        2        22.2
+SUB MODULES 
+                              i2c_s        1       100.0
+                            
+                         TOTAL           373           
+----------------------------------------------------------------------
+Report for cell i2c_s.netlist
+     Instance path:  i2c_target_inst.i2c_ip
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        2       100.0
+                               I2CA        1       100.0
+                           ORCALUT4        1         0.6
+                                VHI        1        11.1
+                                VLO        1        11.1
+                            
+                         TOTAL             6           
+----------------------------------------------------------------------
+Report for cell mipi2parallel.netlist
+     Instance path:  mipi2parallel_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3DX        6        30.0
+                          MIPIDPHYA        1       100.0
+                           ORCALUT4        1         0.6
+                                VHI        5        55.6
+                                VLO        5        55.6
+                     b2p_byte2pixel        1       100.0
+               rx_dphy_capture_ctrl        1       100.0
+               rx_dphy_dphy_rx_wrap        1       100.0
+             rx_dphy_rx_global_ctrl        1       100.0
+SUB MODULES 
+                                b2p        1       100.0
+                            rx_dphy        1       100.0
+                 rx_dphy_dphy_rx_Z1        1       100.0
+          rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s        1       100.0
+                            
+                         TOTAL            26           
+----------------------------------------------------------------------
+Report for cell b2p.netlist
+     Instance path:  mipi2parallel_inst.b2p_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                VHI        1        11.1
+                                VLO        1        11.1
+                     b2p_byte2pixel        1       100.0
+                            
+                         TOTAL             3           
+----------------------------------------------------------------------
+Report for cell rx_dphy.netlist
+     Instance path:  mipi2parallel_inst.rx_dphy_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                          MIPIDPHYA        1       100.0
+                           ORCALUT4        1         0.6
+                                VHI        3        33.3
+                                VLO        3        33.3
+               rx_dphy_capture_ctrl        1       100.0
+               rx_dphy_dphy_rx_wrap        1       100.0
+             rx_dphy_rx_global_ctrl        1       100.0
+SUB MODULES 
+                 rx_dphy_dphy_rx_Z1        1       100.0
+          rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s        1       100.0
+                            
+                         TOTAL            13           
+----------------------------------------------------------------------
+Report for cell rx_dphy_dphy_rx_Z1.netlist
+     Instance path:  mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                          MIPIDPHYA        1       100.0
+                           ORCALUT4        1         0.6
+                                VHI        2        22.2
+                                VLO        2        22.2
+               rx_dphy_capture_ctrl        1       100.0
+               rx_dphy_dphy_rx_wrap        1       100.0
+             rx_dphy_rx_global_ctrl        1       100.0
+SUB MODULES 
+          rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s        1       100.0
+                            
+                         TOTAL            10           
+----------------------------------------------------------------------
+Report for cell rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s.netlist
+     Instance path:  mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                          MIPIDPHYA        1       100.0
+                           ORCALUT4        1         0.6
+                                VHI        1        11.1
+                                VLO        1        11.1
+                            
+                         TOTAL             4           
+----------------------------------------------------------------------
+Report for cell int_pll.netlist
+     Instance path:  int_pll_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            EHXPLLM        1       100.0
+                                VHI        1        11.1
+                                VLO        1        11.1
+                            
+                         TOTAL             3           

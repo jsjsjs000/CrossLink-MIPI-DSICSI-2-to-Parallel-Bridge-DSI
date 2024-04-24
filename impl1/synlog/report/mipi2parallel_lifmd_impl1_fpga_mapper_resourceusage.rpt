@@ -1,0 +1,30 @@
+Resource Usage Report
+Part: lif_md6000-6
+
+Register bits: 174 of 5600 (3%)
+PIC Latch:       0
+I/O cells:       32
+
+Details:
+BB:             2
+EHXPLLM:        1
+FD1P3BX:        2
+FD1P3DX:        143
+FD1S3BX:        9
+FD1S3DX:        20
+GSR:            1
+I2CA:           1
+IB:             2
+INV:            2
+L6MUX21:        11
+MIPIDPHYA:      1
+OB:             28
+ORCALUT4:       166
+PFUMX:          25
+PUR:            1
+VHI:            9
+VLO:            9
+b2p_byte2pixel: 1
+rx_dphy_capture_ctrl: 1
+rx_dphy_dphy_rx_wrap: 1
+rx_dphy_rx_global_ctrl: 1

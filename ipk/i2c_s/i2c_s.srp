@@ -1,0 +1,27 @@
+SCUBA, Version Diamond (64-bit) 3.13.0.56.2
+Tue Feb 20 12:31:07 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.13\ispfpga\bin\nt64\scuba.exe -w -n i2c_s -lang verilog -synth synplify -bus_exp 7 -bb -type efb -arch sn5w00 -i2c_left 24 -i2c_general_call_enable none -i2c_iobuffer left -i2c_sda_input_left 0 -i2c_sda_output_left 0 -i2c_rate_left 400 -i2c_fifo_enable none -i2c_fifo_clkstr none -i2c_addr_left 1000010 -i2c_wakeup_addr_match left -i2c_wakeup_fifo_af none -i2c_arbitration_lost none -i2c_txrx_ready left -i2c_overrun left -i2c_intr_gc none -i2c_fifo_intr_gc none -i2c_fifo_nack none -i2c_fifo_mrc none -i2c_fifo_arbit none -i2c_fifo_txsync none -i2c_fifo_txunder none -i2c_fifo_rxover none 
+    Circuit name     : i2c_s
+    Module type      : efb
+    Module Version   : 1.2
+    Ports            : 
+	Inputs       : i2c0adri[3:0], i2c0clki, i2c0csi, i2c0dati[9:0], i2c0stbi, i2c0wei
+	Outputs      : i2c0acko, i2c0dato[9:0], i2c0i2cirq, i2c0i2cwkup, i2c0pmuwkup
+	Inouts       : i2c0scl, i2c0sda
+    I/O buffer       : not inserted
+    EDIF output      : i2c_s.edn
+    Verilog output   : i2c_s.v
+    Verilog template : i2c_s_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : i2c_s.srp
+    Element Usage    :
+             BB : 2
+    Estimated Resource Usage:

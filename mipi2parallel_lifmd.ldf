@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="mipi2parallel_lifmd" device="LIF-MD6000-6KMG80I" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="mipi2parallel_top" top="mipi2parallel_top"/>
+        <Source name="source/verilog/synthesis_directives.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="ipk/ipk.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="source/verilog/mipi2parallel.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/verilog/i2c_target_top.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/verilog/mipi2parallel_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="mipi2parallel_top"/>
+        </Source>
+        <Source name="testbench/verilog/simulation_directives.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="testbench/verilog/mipi2parallel_MD_tb.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="mipi2parallel_lifmd.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="simulation/simulation.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="mipi2parallel_lifmd1.sty"/>
+</BaliProject>

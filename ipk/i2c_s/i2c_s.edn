@@ -1,0 +1,536 @@
+(edif i2c_s
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2024 2 20 12 31 7)
+      (program "SCUBA" (version "Diamond (64-bit) 3.13.0.56.2"))))
+      (comment "C:\lscc\diamond\3.13\ispfpga\bin\nt64\scuba.exe -w -n i2c_s -lang verilog -synth synplify -bus_exp 7 -bb -type efb -arch sn5w00 -i2c_left 24 -i2c_general_call_enable none -i2c_iobuffer left -i2c_sda_input_left 0 -i2c_sda_output_left 0 -i2c_rate_left 400 -i2c_fifo_enable none -i2c_fifo_clkstr none -i2c_addr_left 1000010 -i2c_wakeup_addr_match left -i2c_wakeup_fifo_af none -i2c_arbitration_lost none -i2c_txrx_ready left -i2c_overrun left -i2c_intr_gc none -i2c_fifo_intr_gc none -i2c_fifo_nack none -i2c_fifo_mrc none -i2c_fifo_arbit none -i2c_fifo_txsync none -i2c_fifo_txunder none -i2c_fifo_rxover none ")
+  (library ORCLIB
+    (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell VLO
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell BB
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port I
+            (direction INPUT))
+          (port T
+            (direction INPUT))
+          (port O
+            (direction OUTPUT))
+          (port B
+            (direction INOUT)))))
+    (cell I2CA
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port CSI
+            (direction INPUT))
+          (port CLKI
+            (direction INPUT))
+          (port STBI
+            (direction INPUT))
+          (port WEI
+            (direction INPUT))
+          (port ADRI3
+            (direction INPUT))
+          (port ADRI2
+            (direction INPUT))
+          (port ADRI1
+            (direction INPUT))
+          (port ADRI0
+            (direction INPUT))
+          (port DATI9
+            (direction INPUT))
+          (port DATI8
+            (direction INPUT))
+          (port DATI7
+            (direction INPUT))
+          (port DATI6
+            (direction INPUT))
+          (port DATI5
+            (direction INPUT))
+          (port DATI4
+            (direction INPUT))
+          (port DATI3
+            (direction INPUT))
+          (port DATI2
+            (direction INPUT))
+          (port DATI1
+            (direction INPUT))
+          (port DATI0
+            (direction INPUT))
+          (port DATO9
+            (direction OUTPUT))
+          (port DATO8
+            (direction OUTPUT))
+          (port DATO7
+            (direction OUTPUT))
+          (port DATO6
+            (direction OUTPUT))
+          (port DATO5
+            (direction OUTPUT))
+          (port DATO4
+            (direction OUTPUT))
+          (port DATO3
+            (direction OUTPUT))
+          (port DATO2
+            (direction OUTPUT))
+          (port DATO1
+            (direction OUTPUT))
+          (port DATO0
+            (direction OUTPUT))
+          (port ACKO
+            (direction OUTPUT))
+          (port I2CIRQ
+            (direction OUTPUT))
+          (port I2CWKUP
+            (direction OUTPUT))
+          (port PMUWKUP
+            (direction OUTPUT))
+          (port FIFORST
+            (direction INPUT))
+          (port MRDCMPL
+            (direction OUTPUT))
+          (port SRDWR
+            (direction OUTPUT))
+          (port TXFIFOAE
+            (direction OUTPUT))
+          (port TXFIFOE
+            (direction OUTPUT))
+          (port TXFIFOF
+            (direction OUTPUT))
+          (port RXFIFOE
+            (direction OUTPUT))
+          (port RXFIFOAF
+            (direction OUTPUT))
+          (port RXFIFOF
+            (direction OUTPUT))
+          (port SCLI
+            (direction INPUT))
+          (port SCLO
+            (direction OUTPUT))
+          (port SCLOEN
+            (direction OUTPUT))
+          (port SDAI
+            (direction INPUT))
+          (port SDAO
+            (direction OUTPUT))
+          (port SDAOEN
+            (direction OUTPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (net SDAOEN
+            (joined
+              (portRef SDAOEN)))
+          (net SDAO
+            (joined
+              (portRef SDAO)))
+          (net SDAI
+            (joined
+              (portRef SDAI)))
+          (net SCLOEN
+            (joined
+              (portRef SCLOEN)))
+          (net SCLO
+            (joined
+              (portRef SCLO)))
+          (net SCLI
+            (joined
+              (portRef SCLI)))
+          (net RXFIFOF
+            (joined
+              (portRef RXFIFOF)))
+          (net RXFIFOAF
+            (joined
+              (portRef RXFIFOAF)))
+          (net RXFIFOE
+            (joined
+              (portRef RXFIFOE)))
+          (net TXFIFOF
+            (joined
+              (portRef TXFIFOF)))
+          (net TXFIFOE
+            (joined
+              (portRef TXFIFOE)))
+          (net TXFIFOAE
+            (joined
+              (portRef TXFIFOAE)))
+          (net SRDWR
+            (joined
+              (portRef SRDWR)))
+          (net MRDCMPL
+            (joined
+              (portRef MRDCMPL)))
+          (net FIFORST
+            (joined
+              (portRef FIFORST)))
+          (net PMUWKUP
+            (joined
+              (portRef PMUWKUP)))
+          (net I2CWKUP
+            (joined
+              (portRef I2CWKUP)))
+          (net I2CIRQ
+            (joined
+              (portRef I2CIRQ)))
+          (net ACKO
+            (joined
+              (portRef ACKO)))
+          (net DATO0
+            (joined
+              (portRef DATO0)))
+          (net DATO1
+            (joined
+              (portRef DATO1)))
+          (net DATO2
+            (joined
+              (portRef DATO2)))
+          (net DATO3
+            (joined
+              (portRef DATO3)))
+          (net DATO4
+            (joined
+              (portRef DATO4)))
+          (net DATO5
+            (joined
+              (portRef DATO5)))
+          (net DATO6
+            (joined
+              (portRef DATO6)))
+          (net DATO7
+            (joined
+              (portRef DATO7)))
+          (net DATO8
+            (joined
+              (portRef DATO8)))
+          (net DATO9
+            (joined
+              (portRef DATO9)))
+          (net DATI0
+            (joined
+              (portRef DATI0)))
+          (net DATI1
+            (joined
+              (portRef DATI1)))
+          (net DATI2
+            (joined
+              (portRef DATI2)))
+          (net DATI3
+            (joined
+              (portRef DATI3)))
+          (net DATI4
+            (joined
+              (portRef DATI4)))
+          (net DATI5
+            (joined
+              (portRef DATI5)))
+          (net DATI6
+            (joined
+              (portRef DATI6)))
+          (net DATI7
+            (joined
+              (portRef DATI7)))
+          (net DATI8
+            (joined
+              (portRef DATI8)))
+          (net DATI9
+            (joined
+              (portRef DATI9)))
+          (net ADRI0
+            (joined
+              (portRef ADRI0)))
+          (net ADRI1
+            (joined
+              (portRef ADRI1)))
+          (net ADRI2
+            (joined
+              (portRef ADRI2)))
+          (net ADRI3
+            (joined
+              (portRef ADRI3)))
+          (net WEI
+            (joined
+              (portRef WEI)))
+          (net STBI
+            (joined
+              (portRef STBI)))
+          (net CLKI
+            (joined
+              (portRef CLKI)))
+          (net CSI
+            (joined
+              (portRef CSI))))))
+    (cell i2c_s
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port i2c0acko
+            (direction OUTPUT))
+          (port (array (rename i2c0adri "i2c0adri(3:0)") 4)
+            (direction INPUT))
+          (port i2c0clki
+            (direction INPUT))
+          (port i2c0csi
+            (direction INPUT))
+          (port (array (rename i2c0dati "i2c0dati(9:0)") 10)
+            (direction INPUT))
+          (port (array (rename i2c0dato "i2c0dato(9:0)") 10)
+            (direction OUTPUT))
+          (port i2c0i2cirq
+            (direction OUTPUT))
+          (port i2c0i2cwkup
+            (direction OUTPUT))
+          (port i2c0pmuwkup
+            (direction OUTPUT))
+          (port i2c0scl
+            (direction INOUT))
+          (port i2c0sda
+            (direction INOUT))
+          (port i2c0stbi
+            (direction INPUT))
+          (port i2c0wei
+            (direction INPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (instance scuba_vlo_inst
+            (viewRef view1 
+              (cellRef VLO)))
+          (instance i2c0
+            (viewRef view1 
+              (cellRef I2CA))
+            (property I2C_CLK_DIVIDER
+              (string "60"))
+            (property SDA_O_DELAY
+              (string "0"))
+            (property SDA_I_DELAY
+              (string "0"))
+            (property I2C_FIFO_TXALMOSTE
+              (string "3"))
+            (property I2C_FIFO_RXALMOSTF
+              (string "30"))
+            (property I2C_FIFO_RXOVER
+              (string "DISABLED"))
+            (property I2C_FIFO_TXUNDER
+              (string "DISABLED"))
+            (property I2C_FIFO_TXSYNC
+              (string "DISABLED"))
+            (property I2C_FIFO_INTR_ARBIT
+              (string "DISABLED"))
+            (property I2C_FIFO_MRXRDY
+              (string "DISABLED"))
+            (property I2C_FIFO_INTR_NACK
+              (string "DISABLED"))
+            (property I2C_FIFO_INTR_GC
+              (string "DISABLED"))
+            (property I2C_FIFO_CLKSTR
+              (string "DISABLED"))
+            (property I2C_FIFO_ENB
+              (string "DISABLED"))
+            (property I2C_WAKEUP_MASTER
+              (string "DISABLED"))
+            (property I2C_WAKEUP_SLAVE
+              (string "ENABLED"))
+            (property I2C_INTR_GC
+              (string "DISABLED"))
+            (property I2C_INTR_NACK
+              (string "ENABLED"))
+            (property I2C_INTR_TXRXRDY
+              (string "ENABLED"))
+            (property I2C_INTR_ARBIT
+              (string "DISABLED"))
+            (property I2C_GEN_CALL
+              (string "DISABLED"))
+            (property I2C_BUS_PERF
+              (string "400kHz"))
+            (property I2C_SLAVE_ADDR
+              (string "0b1000010"))
+            (property I2C_ADDRESSING
+              (string "7BIT")))
+          (instance Inst2_BB
+            (viewRef view1 
+              (cellRef BB)))
+          (instance Inst1_BB
+            (viewRef view1 
+              (cellRef BB)))
+          (net scuba_vlo
+            (joined
+              (portRef Z (instanceRef scuba_vlo_inst))
+              (portRef FIFORST (instanceRef i2c0))))
+          (net i2c0sdai
+            (joined
+              (portRef O (instanceRef Inst2_BB))
+              (portRef SDAI (instanceRef i2c0))))
+          (net i2c0sdaoen
+            (joined
+              (portRef T (instanceRef Inst2_BB))
+              (portRef SDAOEN (instanceRef i2c0))))
+          (net i2c0sdao
+            (joined
+              (portRef I (instanceRef Inst2_BB))
+              (portRef SDAO (instanceRef i2c0))))
+          (net i2c0scli
+            (joined
+              (portRef O (instanceRef Inst1_BB))
+              (portRef SCLI (instanceRef i2c0))))
+          (net i2c0scloen
+            (joined
+              (portRef T (instanceRef Inst1_BB))
+              (portRef SCLOEN (instanceRef i2c0))))
+          (net i2c0sclo
+            (joined
+              (portRef I (instanceRef Inst1_BB))
+              (portRef SCLO (instanceRef i2c0))))
+          (net i2c0wei
+            (joined
+              (portRef i2c0wei)
+              (portRef WEI (instanceRef i2c0))))
+          (net i2c0stbi
+            (joined
+              (portRef i2c0stbi)
+              (portRef STBI (instanceRef i2c0))))
+          (net i2c0sda
+            (joined
+              (portRef i2c0sda)
+              (portRef B (instanceRef Inst2_BB))))
+          (net i2c0scl
+            (joined
+              (portRef i2c0scl)
+              (portRef B (instanceRef Inst1_BB))))
+          (net i2c0pmuwkup
+            (joined
+              (portRef i2c0pmuwkup)
+              (portRef PMUWKUP (instanceRef i2c0))))
+          (net i2c0i2cwkup
+            (joined
+              (portRef i2c0i2cwkup)
+              (portRef I2CWKUP (instanceRef i2c0))))
+          (net i2c0i2cirq
+            (joined
+              (portRef i2c0i2cirq)
+              (portRef I2CIRQ (instanceRef i2c0))))
+          (net i2c0dato9
+            (joined
+              (portRef (member i2c0dato 0))
+              (portRef DATO9 (instanceRef i2c0))))
+          (net i2c0dato8
+            (joined
+              (portRef (member i2c0dato 1))
+              (portRef DATO8 (instanceRef i2c0))))
+          (net i2c0dato7
+            (joined
+              (portRef (member i2c0dato 2))
+              (portRef DATO7 (instanceRef i2c0))))
+          (net i2c0dato6
+            (joined
+              (portRef (member i2c0dato 3))
+              (portRef DATO6 (instanceRef i2c0))))
+          (net i2c0dato5
+            (joined
+              (portRef (member i2c0dato 4))
+              (portRef DATO5 (instanceRef i2c0))))
+          (net i2c0dato4
+            (joined
+              (portRef (member i2c0dato 5))
+              (portRef DATO4 (instanceRef i2c0))))
+          (net i2c0dato3
+            (joined
+              (portRef (member i2c0dato 6))
+              (portRef DATO3 (instanceRef i2c0))))
+          (net i2c0dato2
+            (joined
+              (portRef (member i2c0dato 7))
+              (portRef DATO2 (instanceRef i2c0))))
+          (net i2c0dato1
+            (joined
+              (portRef (member i2c0dato 8))
+              (portRef DATO1 (instanceRef i2c0))))
+          (net i2c0dato0
+            (joined
+              (portRef (member i2c0dato 9))
+              (portRef DATO0 (instanceRef i2c0))))
+          (net i2c0dati9
+            (joined
+              (portRef (member i2c0dati 0))
+              (portRef DATI9 (instanceRef i2c0))))
+          (net i2c0dati8
+            (joined
+              (portRef (member i2c0dati 1))
+              (portRef DATI8 (instanceRef i2c0))))
+          (net i2c0dati7
+            (joined
+              (portRef (member i2c0dati 2))
+              (portRef DATI7 (instanceRef i2c0))))
+          (net i2c0dati6
+            (joined
+              (portRef (member i2c0dati 3))
+              (portRef DATI6 (instanceRef i2c0))))
+          (net i2c0dati5
+            (joined
+              (portRef (member i2c0dati 4))
+              (portRef DATI5 (instanceRef i2c0))))
+          (net i2c0dati4
+            (joined
+              (portRef (member i2c0dati 5))
+              (portRef DATI4 (instanceRef i2c0))))
+          (net i2c0dati3
+            (joined
+              (portRef (member i2c0dati 6))
+              (portRef DATI3 (instanceRef i2c0))))
+          (net i2c0dati2
+            (joined
+              (portRef (member i2c0dati 7))
+              (portRef DATI2 (instanceRef i2c0))))
+          (net i2c0dati1
+            (joined
+              (portRef (member i2c0dati 8))
+              (portRef DATI1 (instanceRef i2c0))))
+          (net i2c0dati0
+            (joined
+              (portRef (member i2c0dati 9))
+              (portRef DATI0 (instanceRef i2c0))))
+          (net i2c0csi
+            (joined
+              (portRef i2c0csi)
+              (portRef CSI (instanceRef i2c0))))
+          (net i2c0clki
+            (joined
+              (portRef i2c0clki)
+              (portRef CLKI (instanceRef i2c0))))
+          (net i2c0adri3
+            (joined
+              (portRef (member i2c0adri 0))
+              (portRef ADRI3 (instanceRef i2c0))))
+          (net i2c0adri2
+            (joined
+              (portRef (member i2c0adri 1))
+              (portRef ADRI2 (instanceRef i2c0))))
+          (net i2c0adri1
+            (joined
+              (portRef (member i2c0adri 2))
+              (portRef ADRI1 (instanceRef i2c0))))
+          (net i2c0adri0
+            (joined
+              (portRef (member i2c0adri 3))
+              (portRef ADRI0 (instanceRef i2c0))))
+          (net i2c0acko
+            (joined
+              (portRef i2c0acko)
+              (portRef ACKO (instanceRef i2c0))))))))
+  (design i2c_s
+    (cellRef i2c_s
+      (libraryRef ORCLIB)))
+)

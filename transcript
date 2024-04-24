@@ -1,0 +1,27 @@
+# Reading pref.tcl
+# do {C:/Users/p2119/Desktop/CrossLink-MIPI-DSICSI-2-to-Parallel-Bridge-DSI/simulation/simulation.mdo}
+# Loading project simulation
+# Compile of rx_dphy_capture_ctrl.v was successful.
+# Compile of rx_dphy_rx_global_ctrl.v was successful.
+# Compile of rx_dphy_soft_dphy_rx.v was successful.
+# Compile of rx_dphy_dphy_wrapper.v was successful.
+# Compile of rx_dphy_dphy_rx_wrap.v was successful.
+# Compile of rx_dphy_dphy_rx.v was successful.
+# Compile of rx_dphy.v was successful.
+# Compile of int_pll.v was successful.
+# Compile of i2c_s.v was successful.
+# Compile of b2p_byte2pixel.v was successful.
+# Compile of b2p.v was successful.
+# Compile of ipk.v was successful.
+# 12 compiles, 0 failed with no errors.
+# vsim -L work -L pmi_work -L ovi_lifmd mipi2parallel_MD_tb 
+# Start time: 15:27:39 on Feb 20,2024
+# ** License Issue: Error getting license information: No license or end of license list.
+# ** License Issue: Licensed number of users already reached. (C:\lscc\diamond\3.13\license\license.dat)
+# ** Error: Failure to obtain a Verilog simulation license. Unable to checkout any of these license features: 'latticemsim' or 'alteramtivlog'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO C:\Users\p2119\Desktop\CrossLink-MIPI-DSICSI-2-to-Parallel-Bridge-DSI\simulation\simulation.mdo PAUSED at line 54
+# End time: 15:28:04 on Feb 20,2024, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 2

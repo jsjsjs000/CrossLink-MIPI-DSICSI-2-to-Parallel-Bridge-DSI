@@ -1,0 +1,922 @@
+# Wed Feb 21 13:13:46 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl1
+Synopsys Lattice Technology Mapper, Version map202303lat, Build 132R, Built Aug 31 2023 04:16:35, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 122MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 136MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 136MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 138MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 194MB)
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 198MB peak: 198MB)
+
+@N: MO231 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found counter in view:work.i2c_target_Z2(verilog) instance r_reg_adr[3:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 200MB peak: 200MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 200MB peak: 200MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 201MB peak: 201MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 202MB peak: 202MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 202MB peak: 202MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 202MB peak: 203MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 202MB peak: 203MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 209MB peak: 209MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		     0.56ns		 170 /       166
+   2		0h:00m:01s		     0.56ns		 152 /       166
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 209MB peak: 209MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 210MB peak: 210MB)
+
+
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 210MB peak: 210MB)
+
+
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 210MB peak: 210MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 154MB peak: 210MB)
+
+Writing Analyst data base C:\Users\p2119\Desktop\CrossLink-MIPI-DSICSI-2-to-Parallel-Bridge-DSI\impl1\synwork\mipi2parallel_lifmd_impl1_m.srm
+Warning: Found 8 combinational loops!
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_5
+1) instance ip_dati_7_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_5 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_5
+    input  pin i2c_target_inst.ip_dati_7_.ctrl/A
+    instance   i2c_target_inst.ip_dati_7_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_7_.ctrl/Z
+    net        i2c_target_inst.ctrl_5
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_4
+2) instance ip_dati_6_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_4 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_4
+    input  pin i2c_target_inst.ip_dati_6_.ctrl/A
+    instance   i2c_target_inst.ip_dati_6_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_6_.ctrl/Z
+    net        i2c_target_inst.ctrl_4
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_6
+3) instance ip_dati_5_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_6 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_6
+    input  pin i2c_target_inst.ip_dati_5_.ctrl/C
+    instance   i2c_target_inst.ip_dati_5_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_5_.ctrl/Z
+    net        i2c_target_inst.ctrl_6
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_0
+4) instance ip_dati_4_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_0 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_0
+    input  pin i2c_target_inst.ip_dati_4_.ctrl/C
+    instance   i2c_target_inst.ip_dati_4_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_4_.ctrl/Z
+    net        i2c_target_inst.ctrl_0
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl
+5) instance ip_dati_3_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl
+    input  pin i2c_target_inst.ip_dati_3_.ctrl/C
+    instance   i2c_target_inst.ip_dati_3_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_3_.ctrl/Z
+    net        i2c_target_inst.ctrl
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_3
+6) instance ip_dati_2_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_3 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_3
+    input  pin i2c_target_inst.ip_dati_2_.ctrl/A
+    instance   i2c_target_inst.ip_dati_2_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_2_.ctrl/Z
+    net        i2c_target_inst.ctrl_3
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_2
+7) instance ip_dati_1_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_2 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_2
+    input  pin i2c_target_inst.ip_dati_1_.ctrl/A
+    instance   i2c_target_inst.ip_dati_1_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_1_.ctrl/Z
+    net        i2c_target_inst.ctrl_2
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_1
+8) instance ip_dati_0_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_1 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_1
+    input  pin i2c_target_inst.ip_dati_0_.ctrl/A
+    instance   i2c_target_inst.ip_dati_0_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_0_.ctrl/Z
+    net        i2c_target_inst.ctrl_1
+End of loops
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 210MB peak: 210MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\p2119\Desktop\CrossLink-MIPI-DSICSI-2-to-Parallel-Bridge-DSI\impl1\mipi2parallel_lifmd_impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 218MB peak: 218MB)
+
+
+Finished Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 218MB peak: 218MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 217MB peak: 218MB)
+
+Warning: Found 8 combinational loops!
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_5
+1) instance ip_dati_7_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_5 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_5
+    input  pin i2c_target_inst.ip_dati_7_.ctrl/A
+    instance   i2c_target_inst.ip_dati_7_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_7_.ctrl/Z
+    net        i2c_target_inst.ctrl_5
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_4
+2) instance ip_dati_6_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_4 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_4
+    input  pin i2c_target_inst.ip_dati_6_.ctrl/A
+    instance   i2c_target_inst.ip_dati_6_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_6_.ctrl/Z
+    net        i2c_target_inst.ctrl_4
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_6
+3) instance ip_dati_5_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_6 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_6
+    input  pin i2c_target_inst.ip_dati_5_.ctrl/C
+    instance   i2c_target_inst.ip_dati_5_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_5_.ctrl/Z
+    net        i2c_target_inst.ctrl_6
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_0
+4) instance ip_dati_4_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_0 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_0
+    input  pin i2c_target_inst.ip_dati_4_.ctrl/C
+    instance   i2c_target_inst.ip_dati_4_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_4_.ctrl/Z
+    net        i2c_target_inst.ctrl_0
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl
+5) instance ip_dati_3_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl
+    input  pin i2c_target_inst.ip_dati_3_.ctrl/C
+    instance   i2c_target_inst.ip_dati_3_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_3_.ctrl/Z
+    net        i2c_target_inst.ctrl
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_3
+6) instance ip_dati_2_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_3 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_3
+    input  pin i2c_target_inst.ip_dati_2_.ctrl/A
+    instance   i2c_target_inst.ip_dati_2_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_2_.ctrl/Z
+    net        i2c_target_inst.ctrl_3
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_2
+7) instance ip_dati_1_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_2 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_2
+    input  pin i2c_target_inst.ip_dati_1_.ctrl/A
+    instance   i2c_target_inst.ip_dati_1_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_1_.ctrl/Z
+    net        i2c_target_inst.ctrl_2
+@W: BN137 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\source\verilog\i2c_target_top.v":148:0:148:5|Found combinational loop during mapping at net i2c_target_inst.ctrl_1
+8) instance ip_dati_0_.ctrl (in view: work.i2c_target_Z2(netlist)), output net ctrl_1 (in view: work.i2c_target_Z2(netlist))
+    net        i2c_target_inst.ctrl_1
+    input  pin i2c_target_inst.ip_dati_0_.ctrl/A
+    instance   i2c_target_inst.ip_dati_0_.ctrl (cell ORCALUT4)
+    output pin i2c_target_inst.ip_dati_0_.ctrl/Z
+    net        i2c_target_inst.ctrl_1
+End of loops
+@W: MT246 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\ipk\i2c_s\i2c_s.v":59:9:59:12|Blackbox I2CA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\ipk\b2p\b2p.v":46:4:46:21|Blackbox b2p_byte2pixel is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\ipk\rx_dphy\rx_dphy_dphy_rx.v":423:8:423:24|Blackbox rx_dphy_capture_ctrl is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\ipk\rx_dphy\rx_dphy_dphy_rx.v":349:0:349:18|Blackbox rx_dphy_rx_global_ctrl is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\ipk\rx_dphy\rx_dphy_dphy_rx.v":254:0:254:16|Blackbox rx_dphy_dphy_rx_wrap is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\ipk\rx_dphy\rx_dphy_dphy_wrapper.v":171:8:171:17|Blackbox MIPIDPHYA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\crosslink-mipi-dsicsi-2-to-parallel-bridge-dsi\ipk\int_pll\int_pll.v":59:12:59:20|Blackbox EHXPLLM is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock mipi2parallel_top|ref_clk_i with period 5.00ns. Please declare a user-defined clock on port ref_clk_i.
+@W: MT420 |Found inferred clock rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_byte_hs_w.
+@W: MT420 |Found inferred clock rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock with period 5.00ns. Please declare a user-defined clock on net mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.clk_byte_o.
+@W: MT420 |Found inferred clock int_pll|CLKOS2_inferred_clock with period 5.00ns. Please declare a user-defined clock on net int_pll_inst.clk_pixel_o_c.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Wed Feb 21 13:13:49 2024
+#
+
+
+Top view:               mipi2parallel_top
+Requested Frequency:    200.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.950
+
+                                                                  Requested     Estimated      Requested     Estimated                Clock        Clock          
+Starting Clock                                                    Frequency     Frequency      Period        Period        Slack      Type         Group          
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int_pll|CLKOS2_inferred_clock                                     200.0 MHz     1102.3 MHz     5.000         0.907         4.093      inferred     (multiple)     
+mipi2parallel_top|ref_clk_i                                       200.0 MHz     143.9 MHz      5.000         6.950         -1.950     inferred     (multiple)     
+rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock     200.0 MHz     1102.3 MHz     5.000         0.907         4.093      inferred     (multiple)     
+rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock       200.0 MHz     1102.3 MHz     5.000         0.907         4.093      inferred     (multiple)     
+System                                                            200.0 MHz     388.1 MHz      5.000         2.576         2.424      system       system_clkgroup
+==================================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                                        |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                       Ending                                                         |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                         System                                                         |  5.000       2.424   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                         mipi2parallel_top|ref_clk_i                                    |  5.000       2.445   |  No paths    -      |  No paths    -      |  No paths    -    
+mipi2parallel_top|ref_clk_i                                    System                                                         |  5.000       -0.567  |  No paths    -      |  No paths    -      |  No paths    -    
+mipi2parallel_top|ref_clk_i                                    mipi2parallel_top|ref_clk_i                                    |  5.000       -1.950  |  No paths    -      |  No paths    -      |  No paths    -    
+rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock    System                                                         |  5.000       4.066   |  No paths    -      |  No paths    -      |  No paths    -    
+rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock    rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock    |  5.000       4.093   |  No paths    -      |  No paths    -      |  No paths    -    
+rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock  System                                                         |  5.000       4.198   |  No paths    -      |  No paths    -      |  No paths    -    
+rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock  rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock  |  5.000       4.093   |  No paths    -      |  No paths    -      |  No paths    -    
+int_pll|CLKOS2_inferred_clock                                  System                                                         |  5.000       4.198   |  No paths    -      |  No paths    -      |  No paths    -    
+int_pll|CLKOS2_inferred_clock                                  int_pll|CLKOS2_inferred_clock                                  |  5.000       4.093   |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: int_pll|CLKOS2_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                Starting                                                                           Arrival          
+Instance                                        Reference                         Type        Pin     Net                          Time        Slack
+                                                Clock                                                                                               
+----------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.b2p_reset_pixel_n_meta_r     int_pll|CLKOS2_inferred_clock     FD1S3DX     Q       b2p_reset_pixel_n_meta_r     0.802       4.093
+mipi2parallel_inst.b2p_reset_pixel_n_sync_r     int_pll|CLKOS2_inferred_clock     FD1S3DX     Q       b2p_reset_pixel_n_sync_r     0.802       4.198
+====================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                   Starting                                                                                              Required          
+Instance                                           Reference                         Type               Pin                 Net                          Time         Slack
+                                                   Clock                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.b2p_reset_pixel_n_sync_r        int_pll|CLKOS2_inferred_clock     FD1S3DX            D                   b2p_reset_pixel_n_meta_r     4.894        4.093
+mipi2parallel_inst.b2p_inst.byte2pixel_wrapper     int_pll|CLKOS2_inferred_clock     b2p_byte2pixel     reset_pixel_n_i     b2p_reset_pixel_n_sync_r     5.000        4.198
+===========================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      0.802
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 4.093
+
+    Number of logic level(s):                0
+    Starting point:                          mipi2parallel_inst.b2p_reset_pixel_n_meta_r / Q
+    Ending point:                            mipi2parallel_inst.b2p_reset_pixel_n_sync_r / D
+    The start point is clocked by            int_pll|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            int_pll|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.b2p_reset_pixel_n_meta_r     FD1S3DX     Q        Out     0.802     0.802 r     -         
+b2p_reset_pixel_n_meta_r                        Net         -        -       -         -           1         
+mipi2parallel_inst.b2p_reset_pixel_n_sync_r     FD1S3DX     D        In      0.000     0.802 r     -         
+=============================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: mipi2parallel_top|ref_clk_i
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                       Starting                                                                   Arrival           
+Instance                               Reference                       Type        Pin     Net                    Time        Slack 
+                                       Clock                                                                                        
+------------------------------------------------------------------------------------------------------------------------------------
+i2c_target_inst.r_reg_adr[3]           mipi2parallel_top|ref_clk_i     FD1P3DX     Q       r_reg_adr[3]           1.279       -1.950
+i2c_target_inst.r_reg_adr[2]           mipi2parallel_top|ref_clk_i     FD1P3DX     Q       r_reg_adr[2]           1.123       -1.794
+i2c_target_inst.r_reg_dat\[1\][2]      mipi2parallel_top|ref_clk_i     FD1P3DX     Q       r_reg_dat\[1\][2]      0.802       -1.473
+i2c_target_inst.r_reg_dat\[1\][5]      mipi2parallel_top|ref_clk_i     FD1P3DX     Q       r_reg_dat\[1\][5]      0.802       -1.473
+i2c_target_inst.r_reg_dat\[3\][2]      mipi2parallel_top|ref_clk_i     FD1P3DX     Q       r_reg_dat\[3\][2]      0.802       -1.473
+i2c_target_inst.r_reg_dat\[3\][5]      mipi2parallel_top|ref_clk_i     FD1P3DX     Q       r_reg_dat\[3\][5]      0.802       -1.473
+i2c_target_inst.r_reg_dat\[9\][2]      mipi2parallel_top|ref_clk_i     FD1P3DX     Q       r_reg_dat\[9\][2]      0.802       -1.473
+i2c_target_inst.r_reg_dat\[9\][5]      mipi2parallel_top|ref_clk_i     FD1P3DX     Q       r_reg_dat\[9\][5]      0.802       -1.473
+i2c_target_inst.r_reg_dat\[11\][2]     mipi2parallel_top|ref_clk_i     FD1P3DX     Q       r_reg_dat\[11\][2]     0.802       -1.473
+i2c_target_inst.r_reg_dat\[11\][5]     mipi2parallel_top|ref_clk_i     FD1P3DX     Q       r_reg_dat\[11\][5]     0.802       -1.473
+====================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                                              Required           
+Instance                            Reference                       Type        Pin     Net               Time         Slack 
+                                    Clock                                                                                    
+-----------------------------------------------------------------------------------------------------------------------------
+i2c_target_inst.ip_dati_2_.II_0     mipi2parallel_top|ref_clk_i     FD1S3DX     D       N_13_i            4.894        -1.950
+i2c_target_inst.ip_dati_2_.II_1     mipi2parallel_top|ref_clk_i     FD1S3BX     D       N_13_i            4.894        -1.950
+i2c_target_inst.ip_dati_5_.II_0     mipi2parallel_top|ref_clk_i     FD1S3DX     D       ip_dati_10[5]     4.894        -1.950
+i2c_target_inst.ip_dati_5_.II_1     mipi2parallel_top|ref_clk_i     FD1S3BX     D       ip_dati_10[5]     4.894        -1.950
+i2c_target_inst.ip_dati_7_.II_0     mipi2parallel_top|ref_clk_i     FD1S3DX     D       ip_dati_10[7]     4.894        -1.691
+i2c_target_inst.ip_dati_7_.II_1     mipi2parallel_top|ref_clk_i     FD1S3BX     D       ip_dati_10[7]     4.894        -1.691
+i2c_target_inst.ip_dati_1_.II_0     mipi2parallel_top|ref_clk_i     FD1S3DX     D       ip_dati_10[1]     4.894        -1.455
+i2c_target_inst.ip_dati_1_.II_1     mipi2parallel_top|ref_clk_i     FD1S3BX     D       ip_dati_10[1]     4.894        -1.455
+i2c_target_inst.ip_dati_0_.II_0     mipi2parallel_top|ref_clk_i     FD1S3DX     D       ip_dati_10[0]     4.894        -1.427
+i2c_target_inst.ip_dati_0_.II_1     mipi2parallel_top|ref_clk_i     FD1S3BX     D       ip_dati_10[0]     4.894        -1.427
+=============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      6.845
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.950
+
+    Number of logic level(s):                8
+    Starting point:                          i2c_target_inst.r_reg_adr[3] / Q
+    Ending point:                            i2c_target_inst.ip_dati_2_.II_0 / D
+    The start point is clocked by            mipi2parallel_top|ref_clk_i [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mipi2parallel_top|ref_clk_i [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+i2c_target_inst.r_reg_adr[3]                   FD1P3DX      Q        Out     1.279     1.279 r     -         
+r_reg_adr[3]                                   Net          -        -       -         -           65        
+i2c_target_inst.ip_dati_2_14_am_1[2]           ORCALUT4     B        In      0.000     1.279 r     -         
+i2c_target_inst.ip_dati_2_14_am_1[2]           ORCALUT4     Z        Out     0.728     2.007 r     -         
+ip_dati_2_14_am_1[2]                           Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_2_14_am[2]             ORCALUT4     A        In      0.000     2.007 r     -         
+i2c_target_inst.ip_dati_2_14_am[2]             ORCALUT4     Z        Out     0.728     2.735 r     -         
+ip_dati_2_14_am[2]                             Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_2_14[2]                PFUMX        BLUT     In      0.000     2.735 r     -         
+i2c_target_inst.ip_dati_2_14[2]                PFUMX        Z        Out     0.305     3.041 r     -         
+N_169                                          Net          -        -       -         -           3         
+i2c_target_inst.ip_dati_2_7_RNI6N2C1[2]        ORCALUT4     C        In      0.000     3.041 r     -         
+i2c_target_inst.ip_dati_2_7_RNI6N2C1[2]        ORCALUT4     Z        Out     0.782     3.823 f     -         
+ip_dati_2_7_RNI6N2C1[2]                        Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_2_.ctrl                ORCALUT4     B        In      0.000     3.823 f     -         
+i2c_target_inst.ip_dati_2_.ctrl                ORCALUT4     Z        Out     0.728     4.552 r     -         
+ctrl_3                                         Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_2_.II_0_RNI8AQE2       ORCALUT4     C        In      0.000     4.552 r     -         
+i2c_target_inst.ip_dati_2_.II_0_RNI8AQE2       ORCALUT4     Z        Out     0.782     5.334 r     -         
+ip_dati[2]                                     Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_10_i_0[2]              ORCALUT4     C        In      0.000     5.334 r     -         
+i2c_target_inst.ip_dati_10_i_0[2]              ORCALUT4     Z        Out     0.728     6.062 f     -         
+ip_dati_10_i_0[2]                              Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_10_i_0_RNINREC1[2]     ORCALUT4     A        In      0.000     6.062 f     -         
+i2c_target_inst.ip_dati_10_i_0_RNINREC1[2]     ORCALUT4     Z        Out     0.782     6.845 r     -         
+N_13_i                                         Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_2_.II_0                FD1S3DX      D        In      0.000     6.845 r     -         
+=============================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      6.845
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.950
+
+    Number of logic level(s):                8
+    Starting point:                          i2c_target_inst.r_reg_adr[3] / Q
+    Ending point:                            i2c_target_inst.ip_dati_5_.II_0 / D
+    The start point is clocked by            mipi2parallel_top|ref_clk_i [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mipi2parallel_top|ref_clk_i [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                            Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+i2c_target_inst.r_reg_adr[3]                    FD1P3DX      Q        Out     1.279     1.279 r     -         
+r_reg_adr[3]                                    Net          -        -       -         -           65        
+i2c_target_inst.ip_dati_2_14_am_1[5]            ORCALUT4     B        In      0.000     1.279 r     -         
+i2c_target_inst.ip_dati_2_14_am_1[5]            ORCALUT4     Z        Out     0.728     2.007 r     -         
+ip_dati_2_14_am_1[5]                            Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_2_14_am[5]              ORCALUT4     A        In      0.000     2.007 r     -         
+i2c_target_inst.ip_dati_2_14_am[5]              ORCALUT4     Z        Out     0.728     2.735 r     -         
+ip_dati_2_14_am[5]                              Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_2_14[5]                 PFUMX        BLUT     In      0.000     2.735 r     -         
+i2c_target_inst.ip_dati_2_14[5]                 PFUMX        Z        Out     0.305     3.041 r     -         
+N_172                                           Net          -        -       -         -           3         
+i2c_target_inst.un1_reset_i_5                   ORCALUT4     B        In      0.000     3.041 r     -         
+i2c_target_inst.un1_reset_i_5                   ORCALUT4     Z        Out     0.782     3.823 r     -         
+un1_reset_i_5                                   Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_5_.ctrl                 ORCALUT4     B        In      0.000     3.823 r     -         
+i2c_target_inst.ip_dati_5_.ctrl                 ORCALUT4     Z        Out     0.728     4.552 r     -         
+ctrl_6                                          Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_5_.II_0_RNI9NT21        ORCALUT4     C        In      0.000     4.552 r     -         
+i2c_target_inst.ip_dati_5_.II_0_RNI9NT21        ORCALUT4     Z        Out     0.782     5.334 r     -         
+ip_dati[5]                                      Net          -        -       -         -           2         
+i2c_target_inst.ip_wei_7_0_a2_1_o2_RNIEV4R2     ORCALUT4     D        In      0.000     5.334 r     -         
+i2c_target_inst.ip_wei_7_0_a2_1_o2_RNIEV4R2     ORCALUT4     Z        Out     0.728     6.062 r     -         
+g0_0                                            Net          -        -       -         -           1         
+i2c_target_inst.ip_wei_7_0_a2_1_o2_RNIMMMF4     ORCALUT4     B        In      0.000     6.062 r     -         
+i2c_target_inst.ip_wei_7_0_a2_1_o2_RNIMMMF4     ORCALUT4     Z        Out     0.782     6.845 r     -         
+ip_dati_10[5]                                   Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_5_.II_0                 FD1S3DX      D        In      0.000     6.845 r     -         
+==============================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      6.845
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.950
+
+    Number of logic level(s):                8
+    Starting point:                          i2c_target_inst.r_reg_adr[3] / Q
+    Ending point:                            i2c_target_inst.ip_dati_5_.II_0 / D
+    The start point is clocked by            mipi2parallel_top|ref_clk_i [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mipi2parallel_top|ref_clk_i [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                            Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+i2c_target_inst.r_reg_adr[3]                    FD1P3DX      Q        Out     1.279     1.279 r     -         
+r_reg_adr[3]                                    Net          -        -       -         -           65        
+i2c_target_inst.ip_dati_2_14_bm_1[5]            ORCALUT4     B        In      0.000     1.279 r     -         
+i2c_target_inst.ip_dati_2_14_bm_1[5]            ORCALUT4     Z        Out     0.728     2.007 r     -         
+ip_dati_2_14_bm_1[5]                            Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_2_14_bm[5]              ORCALUT4     A        In      0.000     2.007 r     -         
+i2c_target_inst.ip_dati_2_14_bm[5]              ORCALUT4     Z        Out     0.728     2.735 r     -         
+ip_dati_2_14_bm[5]                              Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_2_14[5]                 PFUMX        ALUT     In      0.000     2.735 r     -         
+i2c_target_inst.ip_dati_2_14[5]                 PFUMX        Z        Out     0.305     3.041 r     -         
+N_172                                           Net          -        -       -         -           3         
+i2c_target_inst.un1_reset_i_5                   ORCALUT4     B        In      0.000     3.041 r     -         
+i2c_target_inst.un1_reset_i_5                   ORCALUT4     Z        Out     0.782     3.823 r     -         
+un1_reset_i_5                                   Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_5_.ctrl                 ORCALUT4     B        In      0.000     3.823 r     -         
+i2c_target_inst.ip_dati_5_.ctrl                 ORCALUT4     Z        Out     0.728     4.552 r     -         
+ctrl_6                                          Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_5_.II_0_RNI9NT21        ORCALUT4     C        In      0.000     4.552 r     -         
+i2c_target_inst.ip_dati_5_.II_0_RNI9NT21        ORCALUT4     Z        Out     0.782     5.334 r     -         
+ip_dati[5]                                      Net          -        -       -         -           2         
+i2c_target_inst.ip_wei_7_0_a2_1_o2_RNIEV4R2     ORCALUT4     D        In      0.000     5.334 r     -         
+i2c_target_inst.ip_wei_7_0_a2_1_o2_RNIEV4R2     ORCALUT4     Z        Out     0.728     6.062 r     -         
+g0_0                                            Net          -        -       -         -           1         
+i2c_target_inst.ip_wei_7_0_a2_1_o2_RNIMMMF4     ORCALUT4     B        In      0.000     6.062 r     -         
+i2c_target_inst.ip_wei_7_0_a2_1_o2_RNIMMMF4     ORCALUT4     Z        Out     0.782     6.845 r     -         
+ip_dati_10[5]                                   Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_5_.II_0                 FD1S3DX      D        In      0.000     6.845 r     -         
+==============================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      6.845
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.950
+
+    Number of logic level(s):                8
+    Starting point:                          i2c_target_inst.r_reg_adr[3] / Q
+    Ending point:                            i2c_target_inst.ip_dati_2_.II_0 / D
+    The start point is clocked by            mipi2parallel_top|ref_clk_i [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mipi2parallel_top|ref_clk_i [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+i2c_target_inst.r_reg_adr[3]                   FD1P3DX      Q        Out     1.279     1.279 r     -         
+r_reg_adr[3]                                   Net          -        -       -         -           65        
+i2c_target_inst.ip_dati_2_14_bm_1[2]           ORCALUT4     B        In      0.000     1.279 r     -         
+i2c_target_inst.ip_dati_2_14_bm_1[2]           ORCALUT4     Z        Out     0.728     2.007 r     -         
+ip_dati_2_14_bm_1[2]                           Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_2_14_bm[2]             ORCALUT4     A        In      0.000     2.007 r     -         
+i2c_target_inst.ip_dati_2_14_bm[2]             ORCALUT4     Z        Out     0.728     2.735 r     -         
+ip_dati_2_14_bm[2]                             Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_2_14[2]                PFUMX        ALUT     In      0.000     2.735 r     -         
+i2c_target_inst.ip_dati_2_14[2]                PFUMX        Z        Out     0.305     3.041 r     -         
+N_169                                          Net          -        -       -         -           3         
+i2c_target_inst.ip_dati_2_7_RNI6N2C1[2]        ORCALUT4     C        In      0.000     3.041 r     -         
+i2c_target_inst.ip_dati_2_7_RNI6N2C1[2]        ORCALUT4     Z        Out     0.782     3.823 f     -         
+ip_dati_2_7_RNI6N2C1[2]                        Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_2_.ctrl                ORCALUT4     B        In      0.000     3.823 f     -         
+i2c_target_inst.ip_dati_2_.ctrl                ORCALUT4     Z        Out     0.728     4.552 r     -         
+ctrl_3                                         Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_2_.II_0_RNI8AQE2       ORCALUT4     C        In      0.000     4.552 r     -         
+i2c_target_inst.ip_dati_2_.II_0_RNI8AQE2       ORCALUT4     Z        Out     0.782     5.334 r     -         
+ip_dati[2]                                     Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_10_i_0[2]              ORCALUT4     C        In      0.000     5.334 r     -         
+i2c_target_inst.ip_dati_10_i_0[2]              ORCALUT4     Z        Out     0.728     6.062 f     -         
+ip_dati_10_i_0[2]                              Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_10_i_0_RNINREC1[2]     ORCALUT4     A        In      0.000     6.062 f     -         
+i2c_target_inst.ip_dati_10_i_0_RNINREC1[2]     ORCALUT4     Z        Out     0.782     6.845 r     -         
+N_13_i                                         Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_2_.II_0                FD1S3DX      D        In      0.000     6.845 r     -         
+=============================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      6.845
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.950
+
+    Number of logic level(s):                8
+    Starting point:                          i2c_target_inst.r_reg_adr[3] / Q
+    Ending point:                            i2c_target_inst.ip_dati_2_.II_0 / D
+    The start point is clocked by            mipi2parallel_top|ref_clk_i [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            mipi2parallel_top|ref_clk_i [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+i2c_target_inst.r_reg_adr[3]                   FD1P3DX      Q        Out     1.279     1.279 r     -         
+r_reg_adr[3]                                   Net          -        -       -         -           65        
+i2c_target_inst.ip_dati_2_14_am_1[2]           ORCALUT4     B        In      0.000     1.279 r     -         
+i2c_target_inst.ip_dati_2_14_am_1[2]           ORCALUT4     Z        Out     0.728     2.007 r     -         
+ip_dati_2_14_am_1[2]                           Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_2_14_am[2]             ORCALUT4     A        In      0.000     2.007 r     -         
+i2c_target_inst.ip_dati_2_14_am[2]             ORCALUT4     Z        Out     0.728     2.735 r     -         
+ip_dati_2_14_am[2]                             Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_2_14[2]                PFUMX        BLUT     In      0.000     2.735 r     -         
+i2c_target_inst.ip_dati_2_14[2]                PFUMX        Z        Out     0.305     3.041 r     -         
+N_169                                          Net          -        -       -         -           3         
+i2c_target_inst.ip_dati_2_15[2]                ORCALUT4     B        In      0.000     3.041 r     -         
+i2c_target_inst.ip_dati_2_15[2]                ORCALUT4     Z        Out     0.782     3.823 r     -         
+ip_dati_2[2]                                   Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_2_.ctrl                ORCALUT4     D        In      0.000     3.823 r     -         
+i2c_target_inst.ip_dati_2_.ctrl                ORCALUT4     Z        Out     0.728     4.552 r     -         
+ctrl_3                                         Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_2_.II_0_RNI8AQE2       ORCALUT4     C        In      0.000     4.552 r     -         
+i2c_target_inst.ip_dati_2_.II_0_RNI8AQE2       ORCALUT4     Z        Out     0.782     5.334 r     -         
+ip_dati[2]                                     Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_10_i_0[2]              ORCALUT4     C        In      0.000     5.334 r     -         
+i2c_target_inst.ip_dati_10_i_0[2]              ORCALUT4     Z        Out     0.728     6.062 f     -         
+ip_dati_10_i_0[2]                              Net          -        -       -         -           1         
+i2c_target_inst.ip_dati_10_i_0_RNINREC1[2]     ORCALUT4     A        In      0.000     6.062 f     -         
+i2c_target_inst.ip_dati_10_i_0_RNINREC1[2]     ORCALUT4     Z        Out     0.782     6.845 r     -         
+N_13_i                                         Net          -        -       -         -           2         
+i2c_target_inst.ip_dati_2_.II_0                FD1S3DX      D        In      0.000     6.845 r     -         
+=============================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                              Starting                                                                                                         Arrival          
+Instance                                      Reference                                                         Type        Pin     Net                        Time        Slack
+                                              Clock                                                                                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_reset_byte_n_meta_r     rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock     FD1S3DX     Q       rx_reset_byte_n_meta_r     0.802       4.093
+mipi2parallel_inst.rx_reset_byte_n_sync_r     rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock     FD1S3DX     Q       rx_reset_byte_n_sync_r     0.802       4.198
+================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                   Starting                                                                                                                                 Required          
+Instance                                                           Reference                                                         Type                     Pin                Net                        Time         Slack
+                                                                   Clock                                                                                                                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_reset_byte_n_sync_r                          rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock     FD1S3DX                  D                  rx_reset_byte_n_meta_r     4.894        4.093
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.dphy_rx_wrap_inst     rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock     rx_dphy_dphy_rx_wrap     reset_byte_n_i     rx_reset_byte_n_sync_r     5.000        4.198
+==============================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      0.802
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 4.093
+
+    Number of logic level(s):                0
+    Starting point:                          mipi2parallel_inst.rx_reset_byte_n_meta_r / Q
+    Ending point:                            mipi2parallel_inst.rx_reset_byte_n_sync_r / D
+    The start point is clocked by            rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_byte_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                          Type        Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_reset_byte_n_meta_r     FD1S3DX     Q        Out     0.802     0.802 r     -         
+rx_reset_byte_n_meta_r                        Net         -        -       -         -           1         
+mipi2parallel_inst.rx_reset_byte_n_sync_r     FD1S3DX     D        In      0.000     0.802 r     -         
+===========================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                 Starting                                                                                                          Arrival          
+Instance                                         Reference                                                       Type        Pin     Net                           Time        Slack
+                                                 Clock                                                                                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_reset_byte_fr_n_sync_r     rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock     FD1S3DX     Q       rx_reset_byte_fr_n_sync_r     0.934       4.066
+mipi2parallel_inst.rx_reset_byte_fr_n_meta_r     rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock     FD1S3DX     Q       rx_reset_byte_fr_n_meta_r     0.802       4.093
+====================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                      Starting                                                                                                                                       Required          
+Instance                                                                              Reference                                                       Type                       Pin                   Net                           Time         Slack
+                                                                                      Clock                                                                                                                                                            
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.b2p_inst.byte2pixel_wrapper                                        rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock     b2p_byte2pixel             reset_byte_n_i        rx_reset_byte_fr_n_sync_r     5.000        4.066
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.capture_ctrl_inst\.capture_ctrl_inst     rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock     rx_dphy_capture_ctrl       reset_n_i             rx_reset_byte_fr_n_sync_r     5.000        4.066
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.dphy_rx_wrap_inst                        rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock     rx_dphy_dphy_rx_wrap       reset_byte_fr_n_i     rx_reset_byte_fr_n_sync_r     5.000        4.066
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst                      rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock     rx_dphy_rx_global_ctrl     reset_byte_fr_n_i     rx_reset_byte_fr_n_sync_r     5.000        4.066
+mipi2parallel_inst.rx_reset_byte_fr_n_sync_r                                          rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock     FD1S3DX                    D                     rx_reset_byte_fr_n_meta_r     4.894        4.093
+=======================================================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      0.934
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 4.066
+
+    Number of logic level(s):                0
+    Starting point:                          mipi2parallel_inst.rx_reset_byte_fr_n_sync_r / Q
+    Ending point:                            mipi2parallel_inst.b2p_inst.byte2pixel_wrapper / reset_byte_n_i
+    The start point is clocked by            rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s|clk_hs_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                        Pin                Pin               Arrival     No. of    
+Name                                               Type               Name               Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_reset_byte_fr_n_sync_r       FD1S3DX            Q                  Out     0.934     0.934 r     -         
+rx_reset_byte_fr_n_sync_r                          Net                -                  -       -         -           4         
+mipi2parallel_inst.b2p_inst.byte2pixel_wrapper     b2p_byte2pixel     reset_byte_n_i     In      0.000     0.934 r     -         
+=================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                     Starting                                                                       Arrival          
+Instance                                                             Reference     Type                       Pin                Net                Time        Slack
+                                                                     Clock                                                                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+i2c_target_inst.i2c_ip.i2c0                                          System        I2CA                       SCLO               i2c0sclo           0.000       2.424
+i2c_target_inst.i2c_ip.i2c0                                          System        I2CA                       SDAO               i2c0sdao           0.000       2.424
+i2c_target_inst.i2c_ip.i2c0                                          System        I2CA                       ACKO               ip_acko            0.000       2.445
+i2c_target_inst.i2c_ip.i2c0                                          System        I2CA                       DATO2              ip_dato[2]         0.000       3.732
+i2c_target_inst.i2c_ip.i2c0                                          System        I2CA                       I2CIRQ             ip_irq             0.000       3.732
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst     System        rx_dphy_rx_global_ctrl     hs_d0_en_o         hs_d_en_o          0.000       4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst     System        rx_dphy_rx_global_ctrl     hs_settle_en_o     hs_settle_en_w     0.000       4.140
+i2c_target_inst.i2c_ip.i2c0                                          System        I2CA                       DATO0              ip_dato[0]         0.000       4.514
+i2c_target_inst.i2c_ip.i2c0                                          System        I2CA                       DATO1              ip_dato[1]         0.000       4.514
+i2c_target_inst.i2c_ip.i2c0                                          System        I2CA                       DATO3              ip_dato[3]         0.000       4.514
+=====================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                             Required          
+Instance                            Reference     Type        Pin      Net               Time         Slack
+                                    Clock                                                                  
+-----------------------------------------------------------------------------------------------------------
+i2c_target_inst.i2c_ip.i2c0         System        I2CA        SCLI     i2c0scli          5.000        2.424
+i2c_target_inst.i2c_ip.i2c0         System        I2CA        SDAI     i2c0sdai          5.000        2.424
+i2c_target_inst.ip_dati_2_.II_0     System        FD1S3DX     D        N_13_i            4.894        2.445
+i2c_target_inst.ip_dati_2_.II_1     System        FD1S3BX     D        N_13_i            4.894        2.445
+i2c_target_inst.ip_dati_3_.II_0     System        FD1S3DX     D        N_15_i            4.894        2.445
+i2c_target_inst.ip_dati_3_.II_1     System        FD1S3BX     D        N_15_i            4.894        2.445
+i2c_target_inst.ip_dati_4_.II_0     System        FD1S3DX     D        N_17_i            4.894        2.445
+i2c_target_inst.ip_dati_4_.II_1     System        FD1S3BX     D        N_17_i            4.894        2.445
+i2c_target_inst.ip_dati_5_.II_0     System        FD1S3DX     D        ip_dati_10[5]     4.894        2.445
+i2c_target_inst.ip_dati_5_.II_1     System        FD1S3BX     D        ip_dati_10[5]     4.894        2.445
+===========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      2.576
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 2.424
+
+    Number of logic level(s):                1
+    Starting point:                          i2c_target_inst.i2c_ip.i2c0 / SCLO
+    Ending point:                            i2c_target_inst.i2c_ip.i2c0 / SCLI
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                               Pin      Pin               Arrival     No. of    
+Name                                Type     Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+i2c_target_inst.i2c_ip.i2c0         I2CA     SCLO     Out     0.000     0.000 r     -         
+i2c0sclo                            Net      -        -       -         -           1         
+i2c_target_inst.i2c_ip.Inst1_BB     BB       I        In      0.000     0.000 r     -         
+i2c_target_inst.i2c_ip.Inst1_BB     BB       O        Out     2.576     2.576 r     -         
+i2c0scli                            Net      -        -       -         -           1         
+i2c_target_inst.i2c_ip.i2c0         I2CA     SCLI     In      0.000     2.576 r     -         
+==============================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 217MB peak: 218MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 217MB peak: 218MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lif_md6000-6
+
+Register bits: 174 of 5600 (3%)
+PIC Latch:       0
+I/O cells:       32
+
+
+Details:
+BB:             2
+EHXPLLM:        1
+FD1P3BX:        2
+FD1P3DX:        143
+FD1S3BX:        9
+FD1S3DX:        20
+GSR:            1
+I2CA:           1
+IB:             2
+INV:            2
+L6MUX21:        11
+MIPIDPHYA:      1
+OB:             28
+ORCALUT4:       166
+PFUMX:          25
+PUR:            1
+VHI:            9
+VLO:            9
+b2p_byte2pixel: 1
+rx_dphy_capture_ctrl: 1
+rx_dphy_dphy_rx_wrap: 1
+rx_dphy_rx_global_ctrl: 1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 70MB peak: 218MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Wed Feb 21 13:13:49 2024
+
+###########################################################]
